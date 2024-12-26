@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Formt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form</p>
+    <hr>
+    <form id="survey-form">
+        <fieldset id="texts">
+            <label id="name-label" for="name">Enter your Name: <input type="text" id="name" placeholder="Your Name"></label>
+            <label id="email-label" for="email">Enter your E-mail address: <input type="email" id="email" placeholder="example@gmail.com"></address></label>
+            <label id="number-label" for="age">Enter your age(in years): <input type="number" id="number" name="age" min="18" max="100" placeholder="your age"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Select your gender</label>
+            <select name="age" id="age">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select> 
+        </fieldset>
+        <fieldset>
+            <label for="radiobutton" id="radiobutton">Are you regirstered on our site?</label>
+            <div id="radio"><input type="radio" name="registered" value="True">Yes</div>
+            <div id="radio"><input type="radio" name="registered" value="False">No</div>
+
+            <label for="checkbox" id="checkbox">Did you like our site?</label>
+            <div id="check"><input type="checkbox" name="like-the-site" id="Yes">Yes</div>
+            <div id="check"><input type="checkbox" name="like-the-site" id="Love">Ofcourse</div>
+        </fieldset>
+        <fieldset>
+            <label for="Feedback">Any feedback?: </label>
+            <textarea name="Feedback" id="feedback" cols="100" rows="10" placeholder="Enter your Feedback..."></textarea>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
+</body>
+</html>
